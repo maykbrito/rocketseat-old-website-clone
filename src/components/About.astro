@@ -1,0 +1,26 @@
+---
+import { Image } from "astro:assets";
+
+import AboutBg from '../assets/about-bg.svg'
+import AboutBgMobile from '../assets/about-bg-mobile.svg'
+import AboutImg from '../assets/about-img.svg'
+---
+
+<section class="relative px-5 py-16 md:py-36 mt-10">
+  <Image class="hidden md:block absolute inset-0 z-0 w-full h-full object-cover" src={AboutBg} alt="" />
+
+  <Image class="md:hidden absolute inset-0 z-0 w-full h-full object-cover" src={AboutBgMobile} alt="" />
+
+  <div class="relative flex flex-col md:flex-row text-center md:text-left items-center gap-12 z-10 max-w-[53.75rem] mx-auto">
+    <Image src={AboutImg} alt="" />
+
+    <div class="md:max-w-[31.25rem]">
+      <h2 class="text-3xl text-white leading-10 font-bold">Por que estudar com a gente?</h2>
+      <p class="leading-8 text-white mt-2">
+        Em um mundo com cada vez mais informação, a <strong>velocidade</strong> de aprendizado é a chave para o sucesso! Na Rocketseat você aprende <strong>na prática</strong> as ferramentas mais <strong>modernas</strong> de desenvolvimento <strong>web e mobile</strong>.
+      </p>
+
+      <a href="#" class="text-rocketseat bg-white py-2 px-3 uppercase rounded-full mt-4 inline-block font-bold">Acessar a comunidade</a>
+    </div>
+  </div>
+</section>

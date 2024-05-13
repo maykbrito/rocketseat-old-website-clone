@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Hero from '../components/Hero.astro';
+import About from '../components/About.astro';
 
 import { Image } from "astro:assets";
 
@@ -13,7 +14,7 @@ import yt from '../assets/icons/yt.svg'
 ---
 
 <Layout title="Rocketseat old website">
-  <header class="bg-violet-500">
+  <header class="bg-rocketseat">
     <div class="max-w-[64rem] mx-auto p-5">
       <nav class="flex items-center">
         <a href="#" class="flex items-center gap-7 mr-7">
@@ -21,7 +22,7 @@ import yt from '../assets/icons/yt.svg'
           <div class="w-px bg-white h-6 opacity-50"></div>
         </a>
 
-        <ul class="hidden sm:flex items-center gap-4">
+        <ul class="hidden md:flex items-center gap-4">
           <li class="font-bold uppercase text-white hover:border-b-4">
             <a href="#">Início</a>
           </li>
@@ -36,7 +37,7 @@ import yt from '../assets/icons/yt.svg'
 					</li>
         </ul>
 
-				<ul class="hidden sm:flex items-center gap-4 ml-auto">
+				<ul class="hidden md:flex items-center gap-4 ml-auto">
 					<li class="w-5 h-5 flex items-center justify-center">
 						<a href="#">
 							<Image src={face}  alt="">
@@ -63,4 +64,5 @@ import yt from '../assets/icons/yt.svg'
   </header>
 
 	<Hero></Hero>
+	<About></About>
 </Layout>
