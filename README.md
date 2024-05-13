@@ -2,6 +2,8 @@
 
 As a challenge, we build this old Rocketseat's website in Astro with Tailwind!
 
+You can follow this journey on https://www.youtube.com/watch?v=LnmBPNLrkv0
+
 
 ![Preview](.github/preview.png)
 
