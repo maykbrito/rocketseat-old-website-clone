@@ -1,0 +1,24 @@
+---
+import { Image } from "astro:assets";
+
+import CommunitImg from '../assets/community-img.svg'
+---
+
+<section class=" pt-12 md:pt-16">
+  <div class="max-w-[53.75rem] mx-auto flex flex-col gap-12 md:flex-row items-center text-center md:text-left border-b-[1px] border-slate-200 pb-12 md:pb-20">
+    <Image src={CommunitImg} alt="" />
+
+    <div>
+      <h2 class="text-3xl text-rocketseat leading-10 font-bold">
+        Faça parte da comunidade
+      </h2>
+
+      <p class="leading-8 text-gray-500 mt-2">
+        Converse com milhares de programadores e compartilhe seus aprendizados e desafios do dia-a-dia na comunidade. Participe, ganhe prêmios e mais uma linha.
+      </p>
+
+      <a href="#" class="text-white bg-rocketseat py-2 px-3 uppercase rounded-full mt-4 inline-block font-bold">ACESSAR COMUNIDADE</a>
+    </div>
+  </div>
+
+</section>
