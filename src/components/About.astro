@@ -1,18 +1,16 @@
 ---
-import { Image } from "astro:assets";
-
 import AboutBg from '../assets/about-bg.svg'
 import AboutBgMobile from '../assets/about-bg-mobile.svg'
 import AboutImg from '../assets/about-img.svg'
 ---
 
 <section class="relative px-5 py-16 md:py-36 mt-10">
-  <Image class="hidden md:block absolute inset-0 z-0 w-full h-full object-cover" src={AboutBg} alt="" />
+  <img class="hidden md:block absolute inset-0 z-0 w-full h-full object-cover" src={AboutBg.src} alt="" />
 
-  <Image class="md:hidden absolute inset-0 z-0 w-full h-full object-cover" src={AboutBgMobile} alt="" />
+  <img class="md:hidden absolute inset-0 z-0 w-full h-full object-cover" src={AboutBgMobile.src} alt="" />
 
   <div class="relative flex flex-col md:flex-row text-center md:text-left items-center gap-12 z-10 max-w-[53.75rem] mx-auto">
-    <Image src={AboutImg} alt="" />
+    <img src={AboutImg.src} alt="" />
 
     <div class="md:max-w-[31.25rem]">
       <h2 class="text-3xl text-white leading-10 font-bold">Por que estudar com a gente?</h2>

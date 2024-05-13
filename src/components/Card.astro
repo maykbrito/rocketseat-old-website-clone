@@ -1,11 +1,9 @@
 ---
-import { Image } from "astro:assets"
-
 const { title, excerpt, src } = Astro.props
 ---
 
 <article class="w-[20rem] md:w-1/3 shrink-0 md:shrink">
-  <Image class="object-cover" src={src} alt="" />
+  <img class="object-cover" src={src} alt="" />
   <h3 class="text-rocketseat font-bold text-xl mt-4">{title}</h3>
   <p class="text-gray-400 mt-2">{excerpt}</p>
 

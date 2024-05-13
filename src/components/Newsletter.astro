@@ -1,6 +1,4 @@
 ---
-import { Image } from "astro:assets";
-
 import NewsletterImg from '../assets/newsletter-img.svg'
 ---
 
@@ -8,7 +6,7 @@ import NewsletterImg from '../assets/newsletter-img.svg'
   <div class="md:max-w-[53.75rem] mx-auto md:flex gap-10 items-center justify-center">
 
  
-    <Image class="opacity-20 absolute -bottom-[2.5rem] -translate-x-1/2 left-1/2 md:static md:translate-x-0 md:opacity-100" src={NewsletterImg} alt= />
+    <img class="opacity-20 absolute -bottom-[2.5rem] -translate-x-1/2 left-1/2 md:static md:translate-x-0 md:opacity-100" src={NewsletterImg.src} alt= />
 
     <div class="text-center md:text-left">
       <h2 class="text-white font-bold text-xl md:text-2xl">Receba conteúdos exclusivos</h2>

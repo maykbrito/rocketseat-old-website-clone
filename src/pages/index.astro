@@ -6,8 +6,6 @@ import Community from '../components/Community.astro';
 import Blog from "../components/Blog.astro";
 import Newsletter from "../components/Newsletter.astro";
 
-import { Image } from "astro:assets";
-
 import logo from "../assets/logo.svg";
 
 import face from '../assets/icons/face.svg'
@@ -21,7 +19,7 @@ import yt from '../assets/icons/yt.svg'
     <div class="max-w-[64rem] mx-auto p-5">
       <nav class="flex items-center">
         <a href="#" class="flex items-center gap-7 mr-7">
-          <Image src={logo} alt="" />
+          <img src={logo.src} alt="" />
           <div class="w-px bg-white h-6 opacity-50"></div>
         </a>
 
@@ -43,22 +41,22 @@ import yt from '../assets/icons/yt.svg'
 				<ul class="hidden md:flex items-center gap-4 ml-auto">
 					<li class="w-5 h-5 flex items-center justify-center">
 						<a href="#">
-							<Image src={face}  alt="">
+							<img src={face.src}  alt="">
 						</a>
 					</li>
 					<li class="w-5 h-5 flex items-center justify-center">
 						<a href="#">
-							<Image src={insta}  alt="">
+							<img src={insta.src}  alt="">
 						</a>
 					</li>
 					<li class="w-5 h-5 flex items-center justify-center">
 						<a href="#">
-							<Image src={twitter}  alt="">
+							<img src={twitter.src}  alt="">
 						</a>
 					</li>
 					<li class="w-5 h-5 flex items-center justify-center">
 						<a href="#">
-							<Image src={yt}  alt="">
+							<img src={yt.src}  alt="">
 						</a>
 					</li>
 				</ul>
